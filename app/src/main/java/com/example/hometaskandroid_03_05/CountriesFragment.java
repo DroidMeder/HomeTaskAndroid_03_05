@@ -31,7 +31,7 @@ public class CountriesFragment extends Fragment implements OnClick{
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        MainActivity.isCountriesFragment=false;
         recyclerViewCountries=view.findViewById(R.id.recycler_countries);
         adaptorCountries=new Adaptor(list, this);
         try {
